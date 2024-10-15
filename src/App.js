@@ -7,6 +7,7 @@ import FundForm from './components/FundForm.js';
 import Update from './components/Update.js';
 import Factsheet from './components/Factsheet.js';
 import Navbar from './components/Navbar.js';
+import Navigation from './components/containers/Navigation.js';
 // import Addfund from './components/Addfund.js';
 
 function App() {
@@ -15,11 +16,14 @@ function App() {
 
     <Router>
       <div className='align-route-components'>
-        
+          <Navigation />
+
         <div>
           <div className='align-main-content'>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/requests" element={<Home />} />
+              <Route path="/account" element={<Home />} />
             </Routes>
           </div>
 

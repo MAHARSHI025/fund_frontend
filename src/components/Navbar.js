@@ -58,18 +58,20 @@ function Navbar({ inner_element_preview, inner_element_edit, all_details }) {
             </div>
 
             {displayDetail && (
-                <div className='display-detail'>
-                    <div className="navbar-left">
-                        <h3>Get in touch with the team</h3>
-                        <span>Fund last viewed on 3rd July 2020</span>
-                        <span>Fund last updated on 3rd July 2020</span>
-                    </div>
-                    {allDetails?.length > 0 && allDetails.map((item, index) => (
-                        <div className="navbar-bottom" key={index}>
-                            <h4>Firm Assets <span>{item?.firm_assets}</span></h4>
-                            <h4>Strategy Assets <span>{item?.strategy_assets}</span></h4>
+                <div>
+                    {allDetails?.length > 0 && (
+                        <div className='display-detail'>
+                            <div className="navbar-left">
+                                <h3>Get in touch with the team</h3>
+                                <span>Fund last viewed on 3rd July 2020</span>
+                                <span>Fund last updated on {allDetails[0]?.date_updated}</span>
+                            </div>
+                            <div className="navbar-bottom" >
+                                <h4>Firm Assets <span>{allDetails[0]?.firm_assets}</span></h4>
+                                <h4>Strategy Assets <span>{allDetails[0]?.strategy_assets}</span></h4>
+                            </div>
                         </div>
-                    ))}
+                    )}
                 </div>
             )}
         </div>

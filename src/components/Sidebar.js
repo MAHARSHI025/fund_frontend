@@ -29,28 +29,6 @@ function Sidebar({ change_to_addfund, fund_data }) {
     return (
         <>
             <div className='sidebar'>
-                <div className='left-component'>
-                    <div className='side-panel'>
-                        <div className='side-panel-element'>
-                            <span className="material-symbols-outlined">
-                                apps
-                            </span>
-                            <h5>Funds</h5>
-                        </div>
-                        <div className='side-panel-element'>
-                            <span className="material-symbols-outlined">
-                                settings
-                            </span>
-                            <h5>Manage Requests</h5>
-                        </div>
-                        <div className='side-panel-element'>
-                            <span className="material-symbols-outlined">
-                                shopping_cart_checkout
-                            </span>
-                            <h5>Funds</h5>
-                        </div>
-                    </div>
-                </div>
 
                 <div className="sidebar-menu-structure">
                     <div className='fund-data'>

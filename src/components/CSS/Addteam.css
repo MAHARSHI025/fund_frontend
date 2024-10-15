@@ -1,6 +1,8 @@
 .Addteam {
     padding: 20px 0px;
     max-width: 30rem !important;
+    display: flex;
+    flex-direction: column;
 }
 
 .Addteam h3 {
@@ -17,6 +19,12 @@
 .Addteam-input-section {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+}
+.inner-input-section{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
 }
 
 .Addteam-input-section h4 {

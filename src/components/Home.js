@@ -7,11 +7,11 @@ import Factsheet from './Factsheet.js'
 import Sidebar from './Sidebar.js'
 import Errortext from './elements/Errortext.js'
 import Button from './elements/Button.js'
-import Addteam from './containers/Addteam.js'
 import FundForm from './FundForm.js'
 import Discrete from './containers/Discrete.js'
 import Shareclass from './containers/Shareclass.js'
 import axios from 'axios'
+import AssetsAllocation from './containers/AssetsAllocation.js'
 
 function Home() {
 
@@ -36,7 +36,7 @@ function Home() {
 
   const add_fund = async () => {
     try {
-      let responce = await axios.post("http://localhost:5000/api/v1/funds/addfund", { name: fundname, email: "demo@gmail.com" })
+      let responce = await axios.post("http://localhost:5000/api/v1/funds/addfund", { name: fundname, email: "demo2@gmail.com" })
       console.log(responce);
     } catch (error) {
       console.log(error);
@@ -97,7 +97,7 @@ function Home() {
 
                           <div className='home-content-section'>
                             <h4>About the fund</h4>
-                            <span>{alldetails[0]?.description}</span>
+                            <span>{alldetails[0]?.fund_description}</span>
                             <div>
                               <h3>The fund aims to track the performance of the 1OAK MA80 Strategy, which has a benchmark allocation of approximately 80% in Equities with 20% in Bonds and Alternatives.. The strategy has exposure to equities, fixed income, cash and alternative assets.</h3>
                               <h3>Founded in 2009, 1OAK Capital is a London based firm specialised in Asset Management and Advisory, with a focus on investment solutions dedicated to institutional clients and MiFID II professionals. 1OAK Capital is headquartered in London with a branch in Rome and presence in New York and Dubai.</h3>
@@ -115,44 +115,18 @@ function Home() {
                           <h3>Team</h3>
 
                           <div className='team-section-members'>
-
-                            <div>
-                              <h3>David stuff</h3>
-                              <h4>Managing director</h4>
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" />
-                            </div>
-                            <div>
-                              <h3>David stuff</h3>
-                              <h4>Managing director</h4>
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" />
-                            </div>
-                            <div>
-                              <h3>David stuff</h3>
-                              <h4>Managing director</h4>
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" />
-                            </div>
-                            <div>
-                              <h3>David stuff</h3>
-                              <h4>Managing director</h4>
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" />
-                            </div>
-                            <div>
-                              <h3>David stuff</h3>
-                              <h4>Managing director</h4>
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" />
-                            </div>
-                            <div>
-                              <h3>David stuff</h3>
-                              <h4>Managing director</h4>
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" />
-                            </div>
-                            <div>
-                              <h3>David stuff</h3>
-                              <h4>Managing director</h4>
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" />
-                            </div>
-
+                          {alldetails?.map((item, index) => (
+                              <div>
+                                <h3>{item.team_name}</h3>
+                                <h4>{item.team_designation}</h4>
+                                <a href={item.linkedin_url}>
+                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" />
+                                </a>
+                              </div>
+                          ))}
                           </div>
+
+
                         </div>
 
                         <div className='br'>
@@ -216,6 +190,8 @@ function Home() {
 
 
                         <Shareclass />
+
+                        {/* <AssetsAllocation/> */}
                       </div>
 
                     </div>
@@ -247,7 +223,7 @@ function Home() {
               <div className='addfund-input-section'>
                 <h4>Please enter strategy name below.</h4>
                 <input type="text" placeholder='Fund name' onChange={(e) => setfundname(e.target.value)} />
-                <Button value={"Add Fund"} change_to_addfund={add_fund}></Button>
+                <Button value={"Add Fund"} change_to_addfund={add_fund} ></Button>
               </div>
 
               {/* <div className='addfund-placeholder'>
