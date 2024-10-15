@@ -1,0 +1,65 @@
+.stratergy {
+    padding: 20px 0px;
+
+}
+
+.stratergy h3 {
+    margin-bottom: 10px;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+textarea {
+    width: 80%;
+    height: 126px;
+    top: 344px;
+    left: 321px;
+    gap: 0px;
+    border-radius: 5px;
+    opacity: 0px;
+    padding: 10px;
+    font-size: large;
+    resize: none;
+    background-color: #F1F1F141;
+    border: 0;
+}
+textarea::placeholder{
+    font-family: Open Sans;
+    font-size: small;
+    color: rgb(195, 195, 195);
+}
+
+.stratergy-second-section h4 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.stratergy-second-section input {
+    top: 537px;
+    left: 321px;
+    gap: 0px;
+    border-radius: 5px;
+    opacity: 0px;
+    border: 1px solid #E8E8E8;
+    padding: 15px 12px;
+    margin: 9px 0px;
+}
+
+.inner-second-section {
+    display: flex;
+    gap: 50px;
+}
+
+#longer-input{
+    width: 25rem;
+}

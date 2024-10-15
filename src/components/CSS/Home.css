@@ -1,0 +1,291 @@
+.align-route-components {
+    display: flex;
+    padding-top: 3.04px;
+}
+
+.right-align-components {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 30rem; */
+}
+
+.align-main-content {
+    display: flex;
+}
+
+
+.home-set-element {
+    display: flex;
+}
+.home-inner-structure{
+    display: flex;
+}
+
+.homepage-scroll {
+    padding-right: 12px;
+}
+
+.home-page {
+    overflow-y: scroll;
+    height: 400px;
+    /* width: 35rem; */
+    background-color: white;
+    margin: 26px 0px;
+    /* border-right: 0.5px solid #CCCCCC */
+}
+
+.home-page::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+.home-page::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+.home-setter {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.home-header>div {
+    padding-left: 23px;
+}
+
+.home-title-section {
+    display: flex;
+    align-items: center;
+}
+
+.home-title-section img {
+    width: 45px;
+    height: 49.89px;
+    top: 137px;
+    left: 321px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.home-title-section div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.home-title-section h4 {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.home-title-section span {
+    font-family: Open Sans;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13.62px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #011627;
+}
+
+.home-content-section {
+    margin-top: 28px;
+    margin-bottom: 42px;
+}
+
+.home-content-section h4 {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.home-content-section h3,
+span {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.home-content-section h3 {
+    margin-top: 10px;
+}
+
+.home-team-section {
+    padding: 20px 0px;
+}
+
+.home-team-section h3 {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    margin: 15px 0px;
+
+}
+
+.team-section-members {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-section-members div h3 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    margin: 0;
+}
+
+.team-section-members div h4 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.team-section-members div img {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.home-benchmark-section {
+    padding: 18px 0px;
+    padding-bottom: 45px;
+}
+
+.home-benchmark-section h3 {
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 17.7px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.home-benchmark-section h4 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.benchmark-detail {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 33px;
+}
+
+.benchmark-detail div {
+    max-width: 220px;
+}
+
+.home-qa-section {
+    padding-top: 17px;
+    padding-bottom: 12px;
+}
+
+.home-qa-section h2 {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.home-qa-section h3 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.home-qa-section span {
+    /* font-family: Open Sans; */
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.home-qa-section h4 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.qa-details {
+    padding-left: 59px;
+    margin-top: 10px;
+}
+
+.rightbar{
+    width: 90%;
+}
+
+
+#margin-top {
+    margin-top: 10px;
+}
+
+#margin-top span {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: blue;
+    margin-left: 5px;
+}
+
+.downloadlogo1 {
+    all: unset;
+    font-size: 30px !important;
+    font-style: normal !important;
+    padding: 10px;
+    padding-left: 0;
+
+}
+
+.br {
+    height: 0;
+    border: 1px solid rgb(242, 242, 242);
+}

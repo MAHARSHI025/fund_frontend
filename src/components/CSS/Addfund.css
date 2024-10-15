@@ -1,0 +1,72 @@
+.addfund {
+    /* width: 280%; */
+    width: 73vw;
+    /* padding: 10px 30px; */
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 13px;
+    height: 100%;
+    border: 0.5px solid #E8E8E8;
+    box-shadow: 0px 4px 4px 0px #E8E8E840;
+}
+
+.addfund-input-section {
+    margin-top: 21px;
+    margin-left: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addfund h4 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.addfund input {
+    gap: 0px;
+    border-radius: 5px;
+    opacity: 0px;
+    border: 1px solid #E8E8E8;
+    padding: 15px 13px;
+    width: 15rem !important;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.addfund button {
+    padding: 10px 20px;
+    border: 0;
+    color: white;
+    width: 120px;
+    border-radius: 57px;
+    font-weight: 600;
+    color: black;
+}
+.addfund-placeholder{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.addfund-placeholder h3 {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    letter-spacing: -0.05em;
+    text-align: center;
+
+}
+
+.addfund-placeholder span {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: center;
+}

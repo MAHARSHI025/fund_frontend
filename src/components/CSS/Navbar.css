@@ -1,0 +1,115 @@
+.navbar {
+    background-color: white;
+    padding: 17px;
+    /* display: flex; */
+    justify-content: space-between;
+    padding-bottom: 19px;
+    gap: 50px;
+    padding-left: 20px;
+}
+.new-class{
+    justify-content: end !important;
+}
+.display-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navbar-left {
+    border-radius: 10px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.navbar-left h3 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.navbar-left span {
+    font-family: Open Sans;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13.62px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.navbar-bottom h4 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.navbar-bottom h4 span {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.navbar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    float: right;
+}
+
+.navbar-right {
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.navbar-copy-link{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+.navbar-right:active{
+    color: white;
+}
+
+.navbar-right h4 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.navbar-right h4, .navbar-right h3 {
+    cursor: pointer;
+    color: black;
+}
+.change-button{
+    display: flex;
+    gap: 43px;
+}
+
+.navbar-right h4.active, .navbar-right h3.active {
+    color: black;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}

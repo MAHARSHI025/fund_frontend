@@ -1,0 +1,78 @@
+.update {
+    /* width: 497px; */
+    height: 45%;
+    top: 112px;
+    left: 1220px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    background-color: white;
+    padding: 23px;
+    padding-left: 16px;
+    padding-top: 15px;
+    border: 0.5px solid #E8E8E8;
+    box-shadow: 0px 0px 4px 0px #E8E8E8;
+}
+
+.update-upper-section::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+.update-upper-section::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+.update-upper-section {
+    overflow-y: scroll;
+    height: 230px;
+}
+
+.update-upper-section div {
+    margin-top: 20px;
+}
+
+.update h3 {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.update-upper-section h4 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.update-upper-section h5 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.update-upper-section h6 {
+    font-family: Open Sans;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 13.62px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.downloadlogo {
+    font-family: unset;
+}

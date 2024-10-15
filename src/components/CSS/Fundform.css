@@ -1,0 +1,133 @@
+.fundform-structure {
+    display: flex;
+    flex-direction: column;
+}
+
+.fundform-setter {
+    display: flex;
+}
+
+.fundform-scroll {
+    padding-right: 10px;
+    border-right: 0.5px solid #CCCCCC
+}
+
+.Fundform {
+    overflow-y: scroll;
+    height: 430px;
+    width: 47.5vw;
+    background-color: white;
+    /* padding: 10px 20px; */
+    padding-left: 0;
+    padding-top: 34px;
+    padding-right: 16px;
+    /* margin-left: 26px; */
+}
+
+.Fundform>div {
+    padding-left: 26px;
+}
+
+.Fundform::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+.Fundform::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+.Fundform-top-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+
+.save-button {
+    width: 116px;
+    height: 35px;
+    top: 123px;
+    left: 1058px;
+    gap: 0px;
+    border-radius: 57px;
+    opacity: 0px;
+    background: #E8E8E8;
+    border: 0;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: center;
+
+}
+
+.Fundform-top-section h3 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.Fundform-top-section Button {
+    width: 116px;
+    height: 35px;
+    top: 123px;
+    left: 1058px;
+    gap: 0px;
+    border-radius: 57px;
+    opacity: 0px;
+    color: black;
+}
+
+.upload-logo-section {
+    padding-bottom: 25px;
+    margin-top: 20px;
+}
+
+.upload-logo-section h3 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.upload-logo-section div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.upload-logo-section div h4 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    margin: 12px 0px;
+    margin-right: 10px;
+}
+
+.upload-logo-section div span {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.br {
+    height: 0;
+    border: 1px solid rgb(242, 242, 242);
+}

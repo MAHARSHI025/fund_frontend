@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import "./components/CSS/Addfund.css"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from "./components/Home.js"
+import Sidebar from './components/Sidebar.js';
+import FundForm from './components/FundForm.js';
+import Update from './components/Update.js';
+import Factsheet from './components/Factsheet.js';
+import Navbar from './components/Navbar.js';
+// import Addfund from './components/Addfund.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+    <Router>
+      <div className='align-route-components'>
+        
+        <div>
+          <div className='align-main-content'>
+            <Routes>
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </div>
+
+        </div>
+
+      </div>
+    </Router>
   );
 }
 

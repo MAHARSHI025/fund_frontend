@@ -1,0 +1,24 @@
+.performance-table div h3 {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+
+}
+
+.performance-table div span {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    cursor: pointer;
+}
+.performance-table table{
+    height: 100px;
+    overflow-y: scroll;
+
+}
