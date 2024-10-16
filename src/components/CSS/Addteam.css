@@ -19,7 +19,6 @@
 .Addteam-input-section {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
 }
 .inner-input-section{
     display: flex;

@@ -1,5 +1,18 @@
 .add-perfomance{
     display: flex;
-    justify-content: space-between;
     margin-bottom: 2rem;
+    flex-direction: column;
+
+}
+.inner-add-perfomance{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner-add-perfomance > div{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
 }

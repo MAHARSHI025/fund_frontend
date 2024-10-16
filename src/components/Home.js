@@ -46,13 +46,16 @@ function Home() {
   const handle_fund_data = (item) => {
     // console.log('Selected Item:', item);
     setfunddata(item)
+    
     get_fund_details(item.id)
   };
 
   const get_fund_details = async (get_id) => {
     try {
+      console.log(get_id);
+      
       let responce = await axios.post("http://localhost:5000/api/v1/funds/alldetails", { fund_id: get_id })
-      console.log(responce.data.data);
+      console.log("all details",responce.data);
       setalldetails(responce.data.data)
       console.log(alldetails.description);
 
